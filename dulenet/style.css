@@ -1,0 +1,231 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+section{
+    height: calc(100vh - 130px);
+    background-image: url(img/dog.png);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+.row{
+    background-color: #DFDDE7;
+    height: 130px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    display: inline-flex;
+}
+.logop{
+    font-size: 70px;
+    font-family: Arial;
+    color: #1d0774;
+    margin-top: 25px;
+}
+.pic{
+    margin-left: 10px; 
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+}
+.row ul{
+    list-style: none;
+    display: flex;
+}
+.row ul li{
+    margin-right: 60px;
+    margin-top: 20px;
+}
+.row ul .an1::after{
+    content: "";
+    width: 0%;
+    height: 3px;
+    background: #2d5cca;
+    display: block; 
+    margin: auto;
+    transition: 0.5s;
+}
+.row ul .an1:hover::after{
+    width: 100%;
+}
+.row ul li a{
+    text-decoration: none;
+    color: #1d0774;
+    font-size: 30px;
+    font-family: Arial;
+    cursor: pointer;
+    transition: 0.35s;
+}
+.row ul li a:hover{
+    color: #2d5cca;
+}
+.row1{
+    display: none;
+}
+.row ul li:hover .row1{
+    display: block;
+    position: absolute;
+    margin-left: -15px;
+    background-color: #DFDDE7;
+    height: 1px;
+    width: 200px;
+    margin-top: 3px;
+}
+.row ul li:hover .row1 ul{
+    display: block;
+}
+.row ul li:hover .row1 ul li{
+    width: 150px;
+    margin: 0;
+}
+.row1 ul li button{
+    width: 200px;
+    height: 65px;
+    font-size: 40px;
+    border-style: none;
+    background-color: #DFDDE7;
+    text-align: left;
+    transition: 0.5s;
+}
+.row12{
+    display: none;
+}
+.web:hover .row12{
+    position: absolute;
+    display: block;
+    margin-top: -65px;
+    margin-left: 202px;
+    background-color: #DF6107;
+}
+.row1 ul li button:hover{
+    color: white;
+    background-color: #2d5cca;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.row1 ul li button:active{
+    background-color: #5283f6;
+    transition: 0s;
+}
+.row12 ul li button{
+    width: 250px;
+}
+.row2 ul li button{
+    width: 300px;
+}
+.row3 ul li button{
+    width: 220px;
+}
+.title{
+    font-size: 100px;
+    font-family: arial;
+    color: #024175;
+    position: relative;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.tile{
+    background-color: rgba(122, 233, 241, 0.521);
+}
+.tile2{
+    font-size: 30px;
+    color: aliceblue;
+    text-align: center;
+    margin-top: 10px;
+}
+.menu{
+    display: none;
+}
+.close{
+    display: none;
+}
+.C{
+    margin-top: 37px;
+}
+.CSGO{
+    margin-top: 37px;
+}
+.Raspored{
+    margin-top: 37px;
+}
+@media (max-width: 1700px) {
+    .title{
+        font-size: 70px;
+    }
+    .row ul{
+        display: none;
+        position: absolute;
+        background-color: #DFDDE7;
+        margin-top: 200px;
+        left: -100%;
+        display: flex;
+        transition: 1s;
+    }
+    .row ul li{
+        margin-right: 30px;
+    }
+    .menu{
+        display: flex;
+        justify-content: center;
+        margin-right: 40px;
+        font-size: 40px;
+        height: 50px;
+        width: 120px;
+        border-color: #5283f6;
+        border-radius: 3px;
+        background-color: #DFDDE7;
+        color: #1d0774;
+        transition: 0.5s;
+    }
+    .menu:hover{
+        background-color: #5283f6;
+        border-color: #1d0774;
+        color: #DFDDE7;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    .close{
+        display: flex;
+        justify-content: center;
+        margin-right: 40px;
+        font-size: 40px;
+        height: 60px;
+        width: 60px;
+        border-color: #5283f6;
+        border-radius: 3px;
+        background-color: #DFDDE7;
+        color: #1d0774;
+        transition: 0.5s;
+    }
+    .close:hover{
+        background-color: #5283f6;
+        border-color: #1d0774;
+        color: #DFDDE7;
+        transition: 0.5s;
+        cursor: pointer;
+    } 
+    .row1 ul{
+        margin-left: 205px;
+    }
+    .row12 ul{
+        margin-left: 0px;
+    }
+    .row1 ul{
+        background-color: rgb(249, 37, 37);
+        margin-top: 0;
+        padding-right: 50px
+    }
+    .row1 ul li button{
+        margin-top: 0px;
+    }
+}
+

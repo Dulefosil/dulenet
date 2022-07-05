@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dule/net</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="row">
+            <div class="logo">
+                <h1><img class="pic" src="img/icon.png"></h1>
+                <p class="logop">Dule/net</p>
+            </div>
+            <ul id="jump">
+                <li class="an1"><a href="index.html" style="margin-left: 10px;">Home</a></li>
+                <li class="an1"><a>About</a></li>
+                <li class="an1"><a>Programing <img src="img/arrow.png" height="25px" width="20px"></a>
+                    <div class="row1">
+                        <ul>
+                            <li><button class="C" href="" ><pre> C#</pre></button></li>
+                            <li><button href=""><pre> C++</pre></button></li>
+                            <li class="web">
+                                <button href=""><pre> Web   ></pre></button>
+                                <div class="row12">
+                                    <ul>
+                                        <li><button href="" ><pre> HTML</pre></button></li>
+                                        <li><button href="" ><pre> CSS</pre></button></li>
+                                        <li><button href="" ><pre> Javascript</pre></button></li>
+                                        <li><button href=""><pre> PHP</pre></button></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><button href=""><pre> Java</pre></button></li>
+                            <li><button href=""><pre> Python</pre></button></li>
+                            <li><button href=""><pre> SQL</pre></button></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="an1"><a>Games <img src="img/arrow.png" height="25px" width="20px"></a>
+                <div class="row1" >
+                    <div class="row2">
+                        <ul>
+                            <li><button class="CSGO" href=""><pre> CS:GO</pre></button></li>
+                            <li><button href=""><pre> PUBG</pre></button></li>
+                            <li><button href=""><pre> Minecraft</pre></button></li>
+                            <li><button href=""><pre> LOL</pre></button></li>
+                            <li><button href=""><pre> Clash Royale</pre></button></li>
+                            <li><button href=""><pre> Fall Guys</pre></button></li>
+                        </ul>
+                    </div>
+                </div>
+                </li>
+                <li class="an1"><a>School <img src="img/arrow.png" height="25px" width="20px"></a>
+                <div class="row1">
+                    <div class="row3">
+                        <ul>
+                            <li><button class="Raspored" href=""><pre> Raspored</pre></button></li>    
+                            <li><button href=""><pre> Kontrolni</pre></button></li>
+                            <li><button href=""><pre> Ucenje</pre></button></li>
+                        </ul>
+                    </div>
+                </div>
+                </li>
+                <li class="an1" style="margin-right: 8px;"><a>Contact</a></li>
+                <button class="close" style="margin-right: 0;" onclick="closi()">✖</button>
+            </ul>
+            <button class="menu" onclick="meni()">Menu</button>
+        </div>
+        <div class="title">
+            <h1 class="tile">Welcome</h1>
+            <p class="tile2">↓ This site will help you so much understand some stuffs ↓</p>
+        </div>
+    </section>
+    <script>
+        var row = document.getElementById("jump");
+        function meni(){
+            row.style.left = "0%"
+        }
+        function closi(){
+            row.style.left = "-100%"
+        }
+    </script>
+</body>
+</html>
